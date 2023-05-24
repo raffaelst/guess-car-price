@@ -1,0 +1,34 @@
+﻿@page
+@model CarsModel
+@{
+    ViewData["Title"] = "Cars";
+}
+
+
+<h1>Cars</h1>
+
+@foreach (var car in Model.Cars)
+{
+
+
+    <div>
+        <h2>@car.Make @car.Model</h2>
+        <p>Year: @car.Year</p>
+        <p>Doors: @car.Doors</p>
+        <p>Color: @car.Color</p>
+
+        @if (car.ShowMessage)
+        {
+            <p style="color: green;">Great job!</p>
+        }
+
+        <form method="post">
+            <label for="guess">Guess the Price:</label>
+            <input type="number" id="guess" name="guess" required>
+            <input type="hidden" id="carId" name="carId" value="@car.Id">
+            <button type="submit">Submit</button>
+        </form>
+
+
+    </div>
+}

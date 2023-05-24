@@ -1,0 +1,43 @@
+# ASP.NET Core
+
+## Build artifacts
+bin/
+obj/
+
+## .NET Core
+*.dll
+*.exe
+*.pdb
+*.dll.config
+
+# Visual Studio files
+.vs/
+*.suo
+*.user
+*.csproj.user
+*.pidb
+*.resharper
+
+# MSTest Test Results
+TestResults/
+
+# NuGet Packages
+*.nuget.props
+*.nuget.targets
+NuGet.Config
+NuGet/
+*.nupkg
+*.snupkg
+/package-lock.json
+
+# Build Results
+[Dd]ebug/
+[Rr]elease/
+x64/
+build/
+msbuild.log
+msbuild.err
+
+# Webpack
+node_modules/
+/dist/
